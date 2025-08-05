@@ -6,6 +6,7 @@ services:
     volumes:
       - ./config:/app/config
       - ./assets:/app/assets
+      - /etc/localtime:/etc/localtime:ro
       # Optionally, also mount docker socket if you want to use the docker containers widget
       # - /var/run/docker.sock:/var/run/docker.sock:ro
     ports:
